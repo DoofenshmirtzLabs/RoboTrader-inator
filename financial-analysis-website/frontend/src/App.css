@@ -1,0 +1,184 @@
+/* General container styling */
+.container {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Welcome Message */
+.welcome-message {
+  max-width: 800px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.welcome-message h1 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+}
+.welcome-message p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Centered form styling */
+.centered-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Form styling */
+.form-container {
+  margin-top: 0%;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+}
+.input-field {
+  padding: 12px;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: none;
+  width: 70%;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.submit-button {
+  padding: 12px 24px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+.submit-button:hover {
+  background-color: #ffd633;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Loading and response messages */
+.loading-text, .response-message {
+  margin-top: 20px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* Graph styling */
+.graph-section {
+  margin-top: 40px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding-bottom: 60px;
+}
+.graph-solo {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.graph-section {
+  padding-top: 12px; /* Optional: adjust based on your header height */
+}
+
+.strategy-title {
+  grid-column: 1 / -1; 
+  text-align: center; 
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  padding: 10px; 
+  border-radius: 10px; 
+  color: #ffcc00;
+}
+.graph-solo img {
+  width: 70%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  border: 5px solid #ffcc00;
+}
+
+/* Grid for remaining graphs with size adjustments */
+.graph-grid {
+  display: grid;
+  grid-template-columns: 56% 44%;
+  gap: 20px;
+  justify-content: center;
+  max-width: 95%; /* Ensures grid doesn't stretch beyond 90% of the screen width */
+  margin: 0 auto; /* Centers the grid */
+}
+
+.graph-card-large img {
+  width: 100%;
+  max-width: 100%; /* Prevents the image from stretching beyond its container */
+  height: auto;
+}
+
+.graph-card-small img {
+  width: 100%;
+  max-width: 100%; /* Prevents the image from stretching beyond its container */
+  height: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .graph-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%; /* Ensures it uses full width on smaller screens */
+  }
+}
+
+/* To prevent overflow and ensure proper image scaling */
+.graph-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/* Animation for graphs */
+.graph-card img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+/* Ensure the form is properly centered */
+.form-container {
+  margin: auto;
+}
+
+/* Scroll to Top Button */
+#scrollToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+#scrollToTop:hover {
+  background-color: #ffd633;
+}
+
+
+
